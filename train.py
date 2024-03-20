@@ -17,15 +17,15 @@ logging.set_verbosity(logging.ERROR)
 
 
 train_data = object_detector.DataLoader.from_pascal_voc(
-    'freedomtech/train',
-    'freedomtech/train',
-    ['esp8266', 'pico']
+    'Model/train',
+    'Model/train',
+    ['label_1', 'label_2']
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    'freedomtech/validate',
-    'freedomtech/validate',
-    ['esp8266', 'pico']
+    'Model/validate',
+    'Model/validate',
+    ['label_1', 'label_2']
 )
 
 
